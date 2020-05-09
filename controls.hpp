@@ -5,6 +5,11 @@
 #define CONTROLS_HPP
 
 #include <glm/glm.hpp>
+#include <stdio.h>
+
+void mouseButtonCallback(GLFWwindow*, int, int, int);
+void mouseCallback(GLFWwindow*, double, double);
+void scrollCallback(GLFWwindow*, double, double);
 
 void computeMatricesFromInputs();
 void transformCubeFromInputs(glm::mat4&, int upKey, int leftKey, int downKey, int rightKey, int shrinkKey, int growKey); //Read inputs to move and scale second cube
